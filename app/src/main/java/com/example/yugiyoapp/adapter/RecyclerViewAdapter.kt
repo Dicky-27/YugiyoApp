@@ -59,6 +59,7 @@ class RecyclerViewAdapter(private val dataSet: List<Restoran>, val listener: OnA
         viewHolder.distanceText.text = " . "+dataSet[position].distance
         viewHolder.shippingText.text = dataSet[position].shippingPrice
         viewHolder.menuText.text = dataSet[position].menu.joinToString(", ")
+        viewHolder.shippingDiscount.text = dataSet[position].shippingPriceReal
         viewHolder.shippingDiscount.setPaintFlags(Paint.STRIKE_THRU_TEXT_FLAG)
         viewHolder.viewItem.setOnClickListener {
             listener.onClick( dataSet[position] )

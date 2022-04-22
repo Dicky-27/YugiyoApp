@@ -61,7 +61,7 @@
         android:insetBottom="0dp"
         android:padding="0dp"
         app:iconSize="30dp"
-        app:iconTint="#000000"
+        app:iconTint="@color/pink"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/image_resto" />
 

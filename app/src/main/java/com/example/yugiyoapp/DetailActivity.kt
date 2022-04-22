@@ -101,7 +101,6 @@ class DetailActivity : AppCompatActivity() {
                             likeCounter.text = RestoranData.restorans[i].likeCount.toString()
                         }
                     }
-
                 } else {
                     likeButton.setIconResource(R.drawable.ic_favorite)
                     for (i in 0 until RestoranData.restorans.size) {
@@ -120,9 +119,7 @@ class DetailActivity : AppCompatActivity() {
                     }
                 }
             }
-
         }
-
     }
 
     fun didTapBackButton(view: View) {
