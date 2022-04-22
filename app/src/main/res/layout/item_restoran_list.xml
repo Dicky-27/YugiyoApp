@@ -19,13 +19,13 @@
         <ImageView
             android:id="@+id/img_item"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
             android:adjustViewBounds="true"
             android:background="@color/white"
             android:contentDescription="imageResto"
             android:scaleType="centerCrop"
-            android:layout_centerInParent="true"
-            app:srcCompat="@drawable/img_choquette" />
+            app:srcCompat="@drawable/img_ella" />
 
     </androidx.cardview.widget.CardView>
 
@@ -72,7 +72,9 @@
         android:id="@+id/time_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Waktu:"
+        android:text="Waktu "
+        android:textStyle="bold"
+        android:textColor="@color/pink"
         app:layout_constraintStart_toEndOf="@+id/card_image"
         app:layout_constraintTop_toBottomOf="@id/rating_text"
         android:layout_marginStart="10dp"/>
@@ -83,6 +85,7 @@
         android:layout_height="wrap_content"
         android:text="21m "
         android:textStyle="bold"
+        android:textColor="@color/pink"
         app:layout_constraintStart_toEndOf="@+id/time_title"
         app:layout_constraintTop_toBottomOf="@id/rating_text"
         android:layout_marginStart="2dp"/>
@@ -99,7 +102,7 @@
         android:id="@+id/shipping_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Ongkir:"
+        android:text="Ongkir "
         app:layout_constraintStart_toEndOf="@+id/card_image"
         app:layout_constraintTop_toBottomOf="@id/time_text"
         android:layout_marginStart="10dp"/>
