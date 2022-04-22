@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/contraint_item_layout"
+    android:layout_margin="10dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_image"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="5dp"
+        android:elevation="10dp">
+
+        <ImageView
+            android:id="@+id/img_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:background="@color/white"
+            android:contentDescription="imageResto"
+            android:scaleType="centerCrop"
+            android:layout_centerInParent="true"
+            app:srcCompat="@drawable/img_choquette" />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:id="@+id/title_text"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tohm"
+        app:layout_constraintStart_toEndOf="@+id/card_image"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"/>
+
+    <ImageView
+        android:id="@+id/ic_star"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        app:layout_constraintStart_toEndOf="@id/card_image"
+        app:layout_constraintTop_toBottomOf="@+id/title_text"
+        app:srcCompat="@drawable/ic_baseline_star_24"
+        android:layout_marginStart="10dp"/>
+
+    <TextView
+        android:id="@+id/rating_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4.9"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/ic_star"
+        app:layout_constraintTop_toBottomOf="@id/title_text"/>
+
+    <TextView
+        android:id="@+id/rating_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(245)"
+        app:layout_constraintStart_toEndOf="@+id/rating_text"
+        app:layout_constraintTop_toBottomOf="@id/title_text"
+        android:layout_marginStart="2dp"/>
+
+    <TextView
+        android:id="@+id/time_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Waktu:"
+        app:layout_constraintStart_toEndOf="@+id/card_image"
+        app:layout_constraintTop_toBottomOf="@id/rating_text"
+        android:layout_marginStart="10dp"/>
+
+    <TextView
+        android:id="@+id/time_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="21m "
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/time_title"
+        app:layout_constraintTop_toBottomOf="@id/rating_text"
+        android:layout_marginStart="2dp"/>
+
+    <TextView
+        android:id="@+id/distance_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4km"
+        app:layout_constraintStart_toEndOf="@+id/time_text"
+        app:layout_constraintTop_toBottomOf="@id/rating_text" />
+
+    <TextView
+        android:id="@+id/shipping_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ongkir:"
+        app:layout_constraintStart_toEndOf="@+id/card_image"
+        app:layout_constraintTop_toBottomOf="@id/time_text"
+        android:layout_marginStart="10dp"/>
+
+    <TextView
+        android:id="@+id/shipping_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rp. 20.000"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/shipping_title"
+        app:layout_constraintTop_toBottomOf="@id/time_text"
+        android:layout_marginStart="2dp"/>
+
+    <TextView
+        android:id="@+id/shipping_discount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rp. 15.000"
+        app:layout_constraintStart_toEndOf="@+id/shipping_text"
+        app:layout_constraintTop_toBottomOf="@id/time_text"
+        android:layout_marginStart="4dp"/>
+
+    <TextView
+        android:id="@+id/menu_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nasi goreng, ayam bakar, mie goreng"
+        app:layout_constraintStart_toEndOf="@+id/card_image"
+        app:layout_constraintTop_toBottomOf="@id/shipping_text"
+        android:layout_marginStart="10dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
